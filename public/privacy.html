@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Mail - Send mails securely</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <link rel="stylesheet" href="home.css">
+    <script>
+        // Function to update the date and time
+        function updateDateTime() {
+          // Get the current date and time
+          var now = new Date();
+          
+          // Get the elements to display the date and time
+          var dateElement = document.getElementById("current-date");
+          var timeElement = document.getElementById("current-time");
+          
+          // Format the date and time
+          var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          var formattedDate = now.toLocaleDateString(undefined, options);
+          var formattedTime = now.toLocaleTimeString();
+          
+          // Update the HTML elements with the formatted date and time
+          dateElement.innerHTML = formattedDate;
+          timeElement.innerHTML = formattedTime;
+        }
+        
+        // Call the updateDateTime function when the page loads
+        window.onload = function() {
+          updateDateTime();
+          setInterval(updateDateTime, 1000);
+        };
+      </script>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <div id="header-left">
+                <a target="_blank" href="https://github.com/nchhillar2004">GitHub</a>
+            </div>
+            <div id="header-right">
+            </div>
+            
+        </div>
+
+        <div id="main">
+            <div id="main-left">
+                <p>Hyper Mail</p>
+            </div>
+
+            <div>
+                <input size="28" maxlength="2048" title="Search" name="q" id="sbq" value="">
+                &nbsp;
+                <input type="submit" name="nvp_site_mail" class="search-form-submit" value="Search">
+            </div>
+
+            <div id="date-time">
+                <p><span id="current-date"></span></p>
+                <p> | <span id="current-time"></span></p>
+            </div>
+        </div>
+
+        <div id="app-container" style="display: block;
+        text-align: center;">
+            <div style="background-color: yellow;">Server busy come back later.</div>
+        </div>
+
+        <div id="footer">
+            <p>© 2023 Hyper Mail. All rights reserved.</p>
+            <h3>You are currently using 00 MB (0%) of your 00 MB</h3>
+            <div id="footer-bottom">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

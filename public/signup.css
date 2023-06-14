@@ -1,0 +1,32 @@
+#message button{
+    min-width: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+    /* min-height: 29px; */
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.input-fields{
+    min-width: -webkit-fill-available;
+    margin-bottom: 6px;
+    min-height: 20%;
+    min-height: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+#checkbox{
+    width: 12px;
+    height: 12px;
+    margin-bottom: 12px;
+}
+
+#tr{
+    font-size: 12px;
+    margin-left: 4px;
+}

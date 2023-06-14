@@ -1,0 +1,29 @@
+#message button{
+    min-width: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+    /* min-height: 29px; */
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    font-size: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#login-email{
+    min-width: -webkit-fill-available;
+    margin-bottom: 6px;
+    min-height: 20%;
+    min-height: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+#login-password{
+    min-width: -webkit-fill-available;
+    margin-bottom: 16px;
+    min-height: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}

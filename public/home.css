@@ -1,0 +1,180 @@
+body,html {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+        }
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(25, 25, 25, 0.222);
+    width: 100%;
+    font-size: 13px;
+}
+
+#header-left{
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+#header-right{
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+#header a{
+    margin-right: 4px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#main-left {
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+#main-left p{
+    font-size: x-large;
+    font-weight: bold;
+    display: inline-block; 
+    cursor: pointer; 
+    color: rgba(0,0,0,.6);
+}
+
+#date-time{
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-size: 15px;
+}
+
+#app-container{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#options{
+    font-size: 84%;
+    font-weight: bold;
+    padding-left: 8px;
+    min-width: 120px;
+}
+
+#mails-contanier{
+    padding-top: 4px;
+    padding-left: 4px;
+    width:max-content;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background-color: #C3D9FF;
+}
+
+#mails-options{
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+#options li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+#mails{
+    max-width: 100%;
+}
+
+
+#recieved-mail{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    border-bottom: 1px solid #bbb;
+}
+
+#checkbox{
+    margin-right: 5px;
+}
+
+#senders-name{
+    color: black;
+    font-size: 80%;
+    width: 25%;
+}
+
+#mail-content{
+    font-size: 80%;
+    width: 70%;
+    overflow: hidden;
+}
+
+
+#time-recieved{
+    width: 6%;
+}
+
+#footer{
+    text-align: center;
+}
+
+#footer p{
+    color: rgba(0,0,0,1);
+    font-weight: bold;
+    font-size: 75%;
+}
+
+#footer h3{
+    color: #006633;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+#footer-bottom{
+    display: inline-flex;
+    align-items: center;
+    
+}
+
+#footer li{
+    list-style-type: '-';
+    margin-right: 4px;
+    font-size: 11px;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #mails-contanier{
+        width: 400px;
+    }
+    #main-left p{
+        font-size: small;
+        font-weight: bold;
+        display: inline-block;  
+        color: rgba(0,0,0,.6);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    #mails-contanier{
+        width: 600px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #mails-contanier{
+        width: 1000px;
+    }
+}

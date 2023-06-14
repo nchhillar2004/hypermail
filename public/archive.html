@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Mail - Send mails securely</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <link rel="stylesheet" href="home.css">
+    <script>
+        // Function to update the date and time
+        function updateDateTime() {
+          // Get the current date and time
+          var now = new Date();
+          
+          // Get the elements to display the date and time
+          var dateElement = document.getElementById("current-date");
+          var timeElement = document.getElementById("current-time");
+          
+          // Format the date and time
+          var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          var formattedDate = now.toLocaleDateString(undefined, options);
+          var formattedTime = now.toLocaleTimeString();
+          
+          // Update the HTML elements with the formatted date and time
+          dateElement.innerHTML = formattedDate;
+          timeElement.innerHTML = formattedTime;
+        }
+        
+        // Call the updateDateTime function when the page loads
+        window.onload = function() {
+          updateDateTime();
+          setInterval(updateDateTime, 1000);
+        };
+      </script>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <div id="header-left">
+                <a href="#">Search</a>
+                <a target="_blank" href="https://github.com/nchhillar2004">GitHub</a>
+                <a href="news.html">News</a>
+            </div>
+            <div id="header-right">
+                <a href="account.html">Account</a>
+                <a href="settings.html">Settings</a>
+                <a href="help.html">Help</a>
+                <a href="index.html">Sign Out</a>
+            </div>
+            
+        </div>
+
+        <div id="main">
+            <div id="main-left">
+                <p>Hyper Mail</p>
+            </div>
+
+            <div>
+                <input size="28" maxlength="2048" title="Search" name="q" id="sbq" value="">
+                &nbsp;
+                <input type="submit" name="nvp_site_mail" class="search-form-submit" value="Search Mail">
+            </div>
+
+            <div id="date-time">
+                <p><span id="current-date"></span></p>
+                <p> | <span id="current-time"></span></p>
+            </div>
+        </div>
+
+        <div id="app-container">
+            <div id="options">
+                <a href="compose.html"><li>Compose Mail</li></a>
+                <a href="home.html"><li>Inbox</li></a>
+                <a href="sent.html"><li>Sent Mail</li></a>
+                <a href="stared.html"><li>Stared</li></a>
+                <a href="archive.html"><li style="background-color: #C3D9FF;">Archived</li></a>
+            </div>
+            <div id="mails-contanier">
+                <div id="mails-options">
+                    <input type="submit" class="unarchive-form-submit" value="Unarchive">
+                    <input type="submit" class="report-form-submit" value="Report">
+                    <input type="submit" class="delete-form-submit" value="Delete">
+                    <input type="submit" class="star-form-submit" value="Add Star">
+                    <input type="submit" class="unstar-form-submit" value="Remove Star">
+                    <a href="home.html">Refresh</a>
+                </div>
+                <div id="mails">
+                    <div id="recieved-mail">NO MAILS AVAILABLE
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>© 2023 Hyper Mail. All rights reserved.</p>
+            <h3>You are currently using 00 MB (0%) of your 00 MB</h3>
+            <div id="footer-bottom">
+                <a href="terms.html"><li>Terms</li></a>
+                <a href="privacy.html"><li>Privacy</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="home.html"><li>Home</li></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
